@@ -11,5 +11,7 @@ def check_pwd(pwd):
         return False    
     if not re.search('[a-z]', pwd):
         return False
+    if not re.search('[A-Z]', pwd):
+        return False
 
     return True
