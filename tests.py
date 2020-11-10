@@ -17,6 +17,11 @@ class TestCase(unittest.TestCase):
         pwd = '1234567'
         expected = False
         self.assertEqual(check_pwd(pwd), expected)
+
+    def test4(self):
+        pwd = '123456789abcdefghijklmnopqrsabcdefgaeiou'
+        expected = False
+        self.assertEqual(check_pwd(pwd), expected)
     
 
 if __name__ == '__main__':
