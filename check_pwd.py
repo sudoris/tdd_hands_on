@@ -1,2 +1,2 @@
-def check_pwd(pwd):
-    pass
+def check_pwd(pwd):    
+    return True
