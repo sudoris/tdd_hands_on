@@ -9,5 +9,7 @@ def check_pwd(pwd):
         return False
     if not re.search('[0-9]', pwd):
         return False    
+    if not re.search('[a-z]', pwd):
+        return False
 
     return True
